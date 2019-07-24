@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:layout_width="500px"
+        android:layout_height="200px"
+        android:id="@+id/js_java_demo"
+        android:textSize="40px"
+        android:text="JS调用Java的多种方式demo"
+        android:layout_marginLeft="300px"
+        android:layout_marginTop="400px"/>
+
+    <Button
+        android:layout_width="500px"
+        android:layout_height="200px"
+        android:textSize="40px"
+        android:text="JSBridge"
+        android:id="@+id/js_bridge"
+        android:layout_marginLeft="300px"
+        android:layout_marginTop="800px"/>
+
+</RelativeLayout>

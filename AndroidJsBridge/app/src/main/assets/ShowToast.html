@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+
+        function firstJsNative(){
+            caller.callJava();
+        }
+
+        function secondJsNative(){
+            document.location = "js://webview?arg1=111&arg2=222";
+        }
+
+        function thirdJsNative(){
+            var result = window.prompt("js://demo?arg1=111&arg2=222");
+        }
+
+        function callJSTest(){
+            <!--alet("callJSTest");-->
+            return "callJSTest";
+        }
+
+        function check(){
+            var name = document.getElementById("name").value;
+            var url = "http://how2j.cn/study/checkName.jsp?name="+name;
+
+            xmlhttp =new XMLHttpRequest();
+            xmlhttp.onreadystatechange=checkResultNew; //响应函数
+            xmlhttp.open("GET",url,true);   //设置访问的页面
+            xmlhttp.send(null);  //执行访问
+        }
+
+    </script>
+</head>
+
+<body>
+
+<button style="width: 300px; height: 100px;" id="button" onclick="firstJsNative()">
+    Js to native 第一种方式
+</button>
+
+<button style="width: 300px; height: 100px;" id="button1" onclick="secondJsNative()">
+    Js to native 第二种方式
+</button>
+
+<button style="width: 300px; height: 100px;" id="button2" onclick="thirdJsNative()">
+    Js to native 第三种方式
+</button>
+
+
+</body>
+</html>
