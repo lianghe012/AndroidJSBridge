@@ -6,4 +6,8 @@ package com.lianghe.androidbridge;
  * @class describe
  */
 public class Test {
+
+    void testMethod(){
+
+    }
 }
